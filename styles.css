@@ -1,58 +1,89 @@
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-SemiBold.ttf') format('woff2');
+    src: url('JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-SemiBold.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
-
-body{
+body {
     background-color: #212125;
     margin: 0;
 }
 
-h1{
-    color: #FFF4E8;
-    text-align: center;
-    font-family: Aguafina Script;
-    font-size: 20vh;
-    margin-top: 5%;
-}
-h2{
-    color: #FFFFFF;
-    text-align: center;
-    font-family: JetBrainsMono;
-}
-
-.brand{
-    margin: 2%;
-    height: 100%;
-    width: 50%;
-}
-
-.header{
-    display: flex; /* Aligns logo and nav on the same line */
-    align-items: center; /* Centers both vertically */
-    gap: 40px; /* Creates space between the logo and the nav bar */
-    padding: 15px 30px;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spreads out logo, links, and buttons evenly */
+    padding: 15px 40px;
     background-color: #212125;
 }
 
-.nav-links{
-    margin-top:-1%;
-    display: flex; /* Aligns links horizontally */
-    gap: 35px;
-    margin-left: -5%;
-    margin-right: 5%;
-}
-a{
- color: white;
- font-family: Plus Jakarta Sans;
- text-decoration: none;
+/* Control logo size directly */
+.brand {
+    height: 48px; /* Adjust as needed */
+    width: auto;
+    display: block;
 }
 
-.mode{
-    height: 20px;
-    width: 20px;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
+a {
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Mode toggle icon */
+.mode img {
+    height: 28px;
+    width: 28px;
+    display: block;
+    cursor: pointer;
+}
+
+/* Join button image */
+#img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* Hero text centered cleanly */
+.hero {
+    text-align: center;
+    margin-top: 8vh;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #FFF4E8;
+    font-family: 'Aguafina Script', cursive;
+    font-size: clamp(3rem, 12vw, 8rem); /* Responsive scaling so it doesn't break screens */
+    margin: 0 0 16px 0;
+    font-weight: 400;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: 'JetBrainsMono', monospace;
+    font-size: clamp(1rem, 2.5vw, 1.75rem);
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: 400;
+}
