@@ -87,3 +87,17 @@ h2 {
     margin: 0;
     font-weight: 400;
 }
+
+/* Tablet & Mobile Breakpoints */
+@media (max-width: 768px) {
+    /* Hide nav links on smaller screens (or toggle them via a hamburger menu) */
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 12px 16px;
+    }
+}
