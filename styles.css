@@ -73,7 +73,7 @@ a:hover {
     padding: 0 20px;
 }
 
-h1 {
+.landing-page-h1{
     color: #FFF4E8;
     font-family: 'Aguafina Script', cursive;
     font-size: clamp(3rem, 12vw, 8rem);
@@ -82,7 +82,7 @@ h1 {
     font-weight: 400;
 }
 
-h2 {
+.landing-page-h2 {
     color: #FFFFFF;
     font-family: 'JetBrainsMono', monospace;
     font-size: clamp(1rem, 2.5vw, 1.75rem);
