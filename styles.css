@@ -73,7 +73,7 @@ a:hover {
     padding: 0 20px;
 }
 
-.landing-page-h1{
+.landing-page-h1 {
     color: #FFF4E8;
     font-family: 'Aguafina Script', cursive;
     font-size: clamp(3rem, 12vw, 8rem);
@@ -106,6 +106,8 @@ a:hover {
     }
 }
 
-#about_header {
+#about-header {
     color: burlywood;
+    text-align: center;
+    font-size: 50px;
 }
