@@ -106,39 +106,68 @@ a:hover {
     }
 }
 
-#about-header {
+.header1-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    min-height: 60px;
+}
+
+.header1-container h1 {
     color: burlywood;
+    font-size: 45px;
     text-align: center;
-    font-size: 50px;
+    margin: 0;
+}
+
+.logo1 {
+    position: absolute;
+    left: 20px;
+    width: 240px;
+    height: auto;
+    margin-left: 50px;
 }
 
 #members-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
     justify-items: center;
     padding: 20px;
 }
 
-#member{
+.member{
     text-align: center;
 }
 
 #members-container h2 {
     text-align: center;
     color: burlywood;
-    font-size: 39px;
-    margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 
 #members-container p {
     text-align: center;
     color: burlywood;
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 0;
 }
 
-#member img {
-    width: 300px;
+.member img {
+    width: 350px;
+    max-width: 100%;
+    border-radius:10px;
+    display: block;
+    margin: 0 auto;
 
+}
+
+@media (max-width: 900px) {
+    #members-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
