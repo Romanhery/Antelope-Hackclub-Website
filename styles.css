@@ -111,3 +111,34 @@ a:hover {
     text-align: center;
     font-size: 50px;
 }
+
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+#member{
+    text-align: center;
+}
+
+#members-container h2 {
+    text-align: center;
+    color: burlywood;
+    font-size: 39px;
+    margin-top: 0;
+}
+
+
+#members-container p {
+    text-align: center;
+    color: burlywood;
+    font-size: 25px;
+}
+
+#member img {
+    width: 300px;
+
+}
