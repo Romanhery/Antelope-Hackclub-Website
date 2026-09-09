@@ -111,3 +111,27 @@ a:hover {
     text-align: center;
     font-size: 50px;
 }
+
+#members-container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    /* Centers vertically (requires container height) */
+    min-height: 100vh;
+}
+
+#members-container h2 {
+    text-align: center;
+    color: burlywood;
+}
+
+
+#members-container p {
+    text-align: center;
+    color: burlywood;
+}
+
+#member img {
+    width: 300px;
+
+}
