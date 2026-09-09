@@ -113,22 +113,29 @@ a:hover {
 }
 
 #members-container {
-    display: flex;
-    justify-content: center;
-    /* Centers horizontally */
-    /* Centers vertically (requires container height) */
-    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+#member{
+    text-align: center;
 }
 
 #members-container h2 {
     text-align: center;
     color: burlywood;
+    font-size: 39px;
+    margin-top: 0;
 }
 
 
 #members-container p {
     text-align: center;
     color: burlywood;
+    font-size: 25px;
 }
 
 #member img {
