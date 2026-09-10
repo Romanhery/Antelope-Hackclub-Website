@@ -134,10 +134,13 @@ a:hover {
 .about-us-info {
     text-align: center;
     color: burlywood;
-    text-family: verdana;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 28px;
     line-height: 1.6;
     font-weight: 400;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 #members-container {
