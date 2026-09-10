@@ -10,10 +10,6 @@ body {
     margin: 0;
 }
 
-.body-guides {
-    background-color: #FFF4E8;
-}
-
 .header {
     display: flex;
     align-items: center;
@@ -181,12 +177,14 @@ a:hover {
 }
 
 .guides-container {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     width: 100%;
     max-width: 1100px;
     margin: 60px auto;
+    margin-top: -15px;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -243,8 +241,35 @@ a:hover {
 }
 
 .guides-header h1 {
-    font-family: v;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900; /* Forces the h1 to use your registered 400 face */
+    color: white;
 }
+
+.guides-header p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500; /* Forces the h1 to use your registered 400 face */
+    color: white;
+}
+
+.home-btn {
+  margin-top: 1%;
+  margin-bottom: -2%;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2b2b30;
+  color: #e2e8f0;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-family: 'JetBrainsMono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #38383e;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
 
 figcaption {
     text-align: center;
