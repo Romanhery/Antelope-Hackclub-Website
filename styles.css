@@ -121,7 +121,7 @@ a:hover {
 .about-us-info {
     text-align: center;
     color: burlywood;
-    text-family: verdana;
+    font-family: verdana;
     font-size: 28px;
     line-height: 1.6;
     font-weight: 400;
