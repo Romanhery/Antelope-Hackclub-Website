@@ -192,13 +192,17 @@ a:hover {
     background-color: #1a1a1e;
     box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.25s ease, transform 0.2s ease;
-    background: transparent !important; /* Removes the dark container tile */
-    border: none !important;            /* Removes any border */
-    box-shadow: none !important;        /* Removes outer shadow */
-    padding: 0 !important;              /* Removes extra inner padding */
+    background: transparent !important;
+    /* Removes the dark container tile */
+    border: none !important;
+    /* Removes any border */
+    box-shadow: none !important;
+    /* Removes outer shadow */
+    padding: 0 !important;
+    /* Removes extra inner padding */
     transition: transform 0.2s ease;
-    
-    
+
+
 }
 
 .guide-card a {
@@ -230,10 +234,13 @@ a:hover {
     object-position: center;
     display: block;
     box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-    background: transparent !important; /* Removes the dark container tile */
-    border: none !important;            /* Removes any border */
-    box-shadow: none !important;        /* Removes outer shadow */
-    padding: 0 !important;          
+    background: transparent !important;
+    /* Removes the dark container tile */
+    border: none !important;
+    /* Removes any border */
+    box-shadow: none !important;
+    /* Removes outer shadow */
+    padding: 0 !important;
 }
 
 .guide-card:hover {
@@ -304,7 +311,8 @@ figcaption p {
     margin: 6px 0 0 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(0.8rem, 1.8vw, 0.95rem);
-    color: #e2e8f0 !important; /* Forces light text instead of black */
+    color: #e2e8f0 !important;
+    /* Forces light text instead of black */
     background-color: transparent;
 }
 
