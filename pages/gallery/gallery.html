@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Coming Soon!</h1>
+    <div id="gallery-container" class="gallery-grid">
+        <script>
+            async function loadGallery() {
+                try{
+                    const response = await fetch('/assets/gallery.json');
+                    const gallery = await response.json();
+                    const container = document.getElementById('gallery-container');
+
+                    container.innerHTML = gallery.map(m => `
+                        <div class="guide-card">
+                            <a href="${m.link}" target="_blank">
+                                <div class="img-container">
+                                    <img src="${m.image}">
+                                </div>
+                                <figcaption>
+                                    <h3>${m.name}</h3>
+                                </figcaption>
+                            </a> 
+                        </div>
+                        `).join('');
+                    } catch (err) {
+                        console.error('Failed to load gallery:', err);
+                }
+            }
+            loadGallery();
+        </script>
+        
+    </div>
 </body>
 </html>
