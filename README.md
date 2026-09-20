@@ -1,7 +1,12 @@
 
 # Antelope Hackclub Website
+This is the official website for the Antelope Hackclub Chapter. 
+This website is where you can find guides, a community gallery, and there are always new things coming!
 
-This website is going to be the where users can get resources for guides, and more!. We are also going to be having a gallery to show off everyones projects.
+## Features
+- Community Gallery
+- Guides and Tutorials
+- A Discord bot integrated to our discord server where you can add to the gallery without touching the code
 
 ## Authors
 
