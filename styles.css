@@ -5,24 +5,29 @@
     font-style: normal;
 }
 
+/* Global Reset & Base */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #212125;
     margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #ffffff;
 }
 
+/* Navigation Header */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Spreads out logo, links, and buttons evenly */
     padding: 15px 40px;
     background-color: #212125;
 }
 
-/* Control logo size directly */
 .brand {
     height: 48px;
-    /* Adjust as needed */
     width: auto;
     display: block;
 }
@@ -42,8 +47,7 @@ a {
 }
 
 a:hover {
-    opacity: .8;
-    overflow: hidden;
+    opacity: 0.8;
 }
 
 .header-actions {
@@ -52,7 +56,6 @@ a:hover {
     gap: 20px;
 }
 
-/* Mode toggle icon */
 .mode img {
     height: 28px;
     width: 28px;
@@ -60,14 +63,13 @@ a:hover {
     cursor: pointer;
 }
 
-/* Join button image */
 #img {
     height: 40px;
     width: auto;
     display: block;
 }
 
-/* Hero text centered cleanly */
+/* Hero Section */
 .hero {
     text-align: center;
     margin-top: 8vh;
@@ -78,7 +80,6 @@ a:hover {
     color: #FFF4E8;
     font-family: 'Aguafina Script', cursive;
     font-size: clamp(3rem, 12vw, 8rem);
-    /* Responsive scaling so it doesn't break screens */
     margin: 0 0 16px 0;
     font-weight: 400;
 }
@@ -92,8 +93,7 @@ a:hover {
     font-weight: 400;
 }
 
-
-
+/* Secondary Header Container */
 .header1-container {
     position: relative;
     display: flex;
@@ -121,7 +121,7 @@ a:hover {
 .about-us-info {
     text-align: center;
     color: burlywood;
-    font-family: verdana;
+    font-family: verdana, sans-serif;
     font-size: 28px;
     line-height: 1.6;
     font-weight: 400;
@@ -130,12 +130,15 @@ a:hover {
     padding: 0 20px;
 }
 
+/* Members Grid */
 #members-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     justify-items: center;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .member {
@@ -148,7 +151,6 @@ a:hover {
     font-size: 40px;
     margin-bottom: 10px;
 }
-
 
 #members-container p {
     text-align: center;
@@ -163,169 +165,156 @@ a:hover {
     border-radius: 10px;
     display: block;
     margin: 0 auto;
-
 }
 
-.guides-container {
+/* Guides & Gallery Shared Grid */
+.guides-container,
+#gallery-container {
     display: grid;
     gap: 32px;
     width: 100%;
     max-width: 1100px;
-    margin: 10% auto;
-    margin-top: -15px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 20px auto 80px auto;
     padding: 20px;
-    box-sizing: border-box;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 
-.guide-card {
-    width: 100%;
-    border-radius: 12px;
-    overflow: visible;
-    transition: transform 0.2s ease, box-shadow 0.25s ease;
-    /* Fixes browser sub-pixel corner rendering bugs */
-    transform: translateZ(0);
-    aspect-ratio: 1 / 1;
-    border-radius: 16px;
-    background-color: #1a1a1e;
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.25s ease, transform 0.2s ease;
-    background: transparent !important;
-    /* Removes the dark container tile */
-    border: none !important;
-    /* Removes any border */
-    box-shadow: none !important;
-    /* Removes outer shadow */
-    padding: 0 !important;
-    /* Removes extra inner padding */
-    transition: transform 0.2s ease;
-
-
-}
-
-.guide-card a {
-    display: block;
+/* Card Wrappers */
+.guide-card,
+.gallery-card {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    text-decoration: none;
-
+    background: transparent;
+    border: none;
+    padding: 0;
+    overflow: visible;
 }
 
-.guide-card p {
-    color: white;
-}
-
-.img-container {
+.guide-card a,
+.gallery-card a {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: inherit;
-    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
-.guide-card img {
-    border-radius: 15px;
+/* Uniform Square Image Containers */
+.guides-img,
+.gallery-img,
+.img-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #1a1a1e;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.guides-img img,
+.gallery-img img,
+.img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-    background: transparent !important;
-    /* Removes the dark container tile */
-    border: none !important;
-    /* Removes any border */
-    box-shadow: none !important;
-    /* Removes outer shadow */
-    padding: 0 !important;
 }
 
-.guide-card:hover {
-    transform: scale(1.05) translateY(-4px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
-    background-color: transparent;
+/* Hover Dynamics */
+.guide-card:hover .guides-img,
+.guide-card:hover .img-container,
+.gallery-card:hover .gallery-img {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.5);
 }
 
-.guides-header {
+/* Page Headers */
+.guides-header,
+.gallery-header {
+    max-width: 1100px;
+    margin: 30px auto 0 auto;
+    padding: 0 20px;
     text-align: left;
-    margin-left: 2%;
 }
 
-.guides-header h1 {
+.guides-header h1,
+.gallery-header h1 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 900;
-    /* Forces the h1 to use your registered 400 face */
     color: white;
     font-size: clamp(1.75rem, 5vw, 3rem);
-    margin-left: 10% auto;
+    margin: 16px 0 6px 0;
 }
 
-.guides-header p {
+.guides-header p,
+.gallery-header p {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
-    /* Forces the h1 to use your registered 400 face */
-    color: white;
+    color: #a1a1aa;
     font-size: clamp(0.95rem, 2.5vw, 1.15rem);
-    margin-top: -2%;
-    margin-left: 10% auto;
+    margin: 0;
 }
 
+/* Navigation Back Button */
 .home-btn {
-    margin-top: 1%;
-    margin-bottom: -2%;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
     background: #2b2b30;
-    color: #e2e8f0;
-    padding: 8px 18px;
+    padding: 6px 16px;
     border-radius: 999px;
+    border: 1px solid #38383e;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.home-btn a {
     font-family: 'JetBrainsMono', monospace;
     font-size: 14px;
     font-weight: 500;
-    text-decoration: none;
-    border: 1px solid #38383e;
-    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    color: #e2e8f0;
 }
 
+.home-btn:hover {
+    background: #38383e;
+    border-color: #52525b;
+}
 
+/* Captions & Text Readability */
 figcaption {
+    display: block;
+    width: 100%;
     text-align: center;
-    margin-top: 10px;
-    background-color: transparent;
+    padding-top: 14px;
+    padding-bottom: 8px;
+    overflow: visible;
 }
 
 figcaption h3 {
     margin: 0;
+    padding: 0 4px;
     font-family: 'JetBrainsMono', monospace;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
     font-weight: 700;
+    line-height: 1.4;
     color: #ffffff;
-    background-color: transparent;
+    word-break: break-word;
+    overflow: visible;
 }
 
 figcaption p {
     margin: 6px 0 0 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(0.8rem, 1.8vw, 0.95rem);
-    color: #e2e8f0 !important;
-    /* Forces light text instead of black */
-    background-color: transparent;
+    color: #e2e8f0;
+    line-height: 1.3;
 }
 
-
-
+/* Responsive Media Queries */
 @media (max-width: 768px) {
-
-    .guides-container,
-    #members-container {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    }
-
-    /* Hide nav links on smaller screens (or toggle them via a hamburger menu) */
     .nav-links {
         display: none;
     }
@@ -333,19 +322,23 @@ figcaption p {
     .header {
         padding: 12px 16px;
     }
-}
 
-/* Tablet & Mobile Breakpoints */
-@media (max-width: 768px) {
-
-    /* Hide nav links on smaller screens (or toggle them via a hamburger menu) */
-    .nav-links {
-        display: none;
+    .guides-container,
+    #gallery-container,
+    #members-container {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+        padding: 16px;
     }
 }
 
 @media (max-width: 480px) {
     .header {
-        padding: 12px 16px;
+        padding: 10px 14px;
+    }
+
+    .guides-header,
+    .gallery-header {
+        padding: 0 16px;
     }
 }
