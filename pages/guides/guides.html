@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../../styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <title>Tutorials Page</title>
-    
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-    <body class="body-guides">
-        <header class="guides-header">
-            <div class="home-btn">
-                <a href="/index.html">Back</a>
-            </div>
-            <h1>Guides</h1>
-            <p>Guides for Hackclub</p>
-            
-        </header>
-        <div class="guides-container">
-            
-            <div class="guide-card">
-                <a href="https://hackpad.hackclub.com/" target="_blank">
-                    <div class="guides-img">
-                        <img src="../../assets/hackpad-1.png" alt="">
-                    </div>
-                    <figcaption>
-                        <h3>Hackpad</h3>
-                    </figcaption>
-                </a> 
-            </div>
 
-            <div class="guide-card">
-                <a href="https://www.canva.com/design/DAGr1zQLfE4/eqe5sSP6hE9-4SZez72QFA/view?utm_content=DAGr1zQLfE4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25bb5bce98" target="_blank">
-                    <div class="img-container">
-                        <img src="../../assets/images.jpeg" alt="">
-                    </div>
-                    <figcaption>
-                        <h3>Boba Drops</h3>
-                    </figcaption>
-                </a>
-            </div>
-
-            <div class="guide-card">
-                <a href="https://hackpad.hackclub.com/" target="_blank">
-                    <div class="img-container">
-                        <img src="../../assets/hackpad-2.png" alt="">
-                        
-                    </div>
-                    <figcaption>
-                            <h3>Hackpad</h3>
-                        </figcaption>
-                    
-                </a>
-            </div>
-            
+<body class="body-guide">
+    <header class="guides-header">
+        <div class="home-btn">
+            <a href="/index.html">Back</a>
         </div>
-    </body>
+        <h1>Guides</h1>
+        <p>Projects and creations made by club members</p>
+    </header>
+
+    <div id="guides-container"></div>
+
+    <script>
+        async function loadGallery() {
+            try {
+                const response = await fetch('/assets/JSON/gallery.json');
+                const gallery = await response.json();
+                const container = document.getElementById('guides-container');
+
+                container.innerHTML = gallery.map(m => `
+                    <div class="guides-card">
+                        <a href="${m.link}" target="_blank" rel="noopener noreferrer">
+                            <div class="guides-img">
+                                <img src="${m.image}" alt="${m.name}">
+                            </div>
+                            <figcaption>
+                                <h3>${m.name}</h3>
+                            </figcaption>
+                        </a> 
+                    </div>
+                `).join('');
+            } catch (err) {
+                console.error('Failed to load guide:', err);
+            }
+        }
+        loadGallery();
+    </script>
+</body>
 </html>
