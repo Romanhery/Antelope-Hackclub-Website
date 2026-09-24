@@ -36,6 +36,8 @@ body {
     display: flex;
     align-items: center;
     gap: 32px;
+    width: fit-content;
+    margin-inline: auto;
 }
 
 a {
