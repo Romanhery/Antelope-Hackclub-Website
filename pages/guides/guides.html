@@ -27,7 +27,7 @@
     <script>
         async function loadGallery() {
             try {
-                const response = await fetch('/assets/JSON/gallery.json');
+                const response = await fetch('/assets/JSON/guides.json');
                 const gallery = await response.json();
                 const container = document.getElementById('guides-container');
 
