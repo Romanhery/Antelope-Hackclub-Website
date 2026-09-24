@@ -18,5 +18,10 @@
     "name": "Antelope Hackclub",
     "link": "https://antelope-hackclub.vercel.app/",
     "image": "https://antelope-hackclub.vercel.app/assets/logo.svg"
+  },
+  {
+    "name": "Swirl Guide",
+    "link": "https://swirl.hackclub.com/",
+    "image": "https://swirl.hackclub.com/assets/svg/swirl-2.svg"
   }
 ]
