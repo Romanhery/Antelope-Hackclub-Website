@@ -18,7 +18,6 @@ body {
     background-color: #212125;
 }
 
-
 header{
     display: grid;
     background-color: transparent;
@@ -26,7 +25,6 @@ header{
     justify-content: center; /* Centers horizontally inside */
     align-items: center;
     padding: 0%;
-    
 }
 
 .nav-links{
