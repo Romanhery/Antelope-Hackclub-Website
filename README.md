@@ -6,7 +6,7 @@ This website is where you can find guides, a community gallery, and there are al
 ## Features
 - Community Gallery
 - Guides and Tutorials
-- A Discord bot integrated to our discord server where you can add to the gallery without touching the code
+- A Discord bot integrated to our discord server where you can add to the gallery
 
 ## Authors
 
