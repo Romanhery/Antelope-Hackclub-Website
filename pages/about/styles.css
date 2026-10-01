@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-SemiBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #212125;
+}
+
 header{
     display: grid;
     background-color: transparent;
@@ -5,7 +16,6 @@ header{
     justify-content: center; /* Centers horizontally inside */
     align-items: center;
     padding: 0%;
-    
 }
 
 .nav-links{
@@ -19,4 +29,22 @@ header{
     text-decoration: none;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: white;
+}
+
+a:hover{
+    opacity: 0.8;
+    transform: translateY(-5px);
+    
+}
+
+.logo{
+    background-color: transparent;
+    height: 100px;
+    width: 200px;
+    margin-left: 10%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
 }
