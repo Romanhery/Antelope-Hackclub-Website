@@ -2,22 +2,15 @@
   {
     "name": "Antelope x Hackclub",
     "link": "https://antelope-hackclub.vercel.app/",
-    "image": "https://antelope-hackclub.vercel.app/assets/logo.svg"
+    "image": "https://antelope-hackclub.vercel.app/logo.svg",
+    "description": "This is the club's website"
   },
   {
     "name": "Myles'a Swirl Website",
     "link": "https://myles-ray.github.io/swirl/",
-    "image": "https://myles-ray.github.io/swirl/music.png"
-  },
-  {
-    "name": "Myles's Swirl Website",
-    "link": "https://myles-ray.github.io/swirl/",
-    "image": "https://myles-ray.github.io/swirl/music.png"
-  },
-  {
-    "name": "Myles' Swirl Website",
-    "link": "https://myles-ray.github.io/swirl/",
-    "image": "https://myles-ray.github.io/swirl/music.png"
+    "image": "https://myles-ray.github.io/swirl/music.png",
+    "description": "Roman is so tuff yeah yeah yeah yeah y"
   }
+  
   
 ]

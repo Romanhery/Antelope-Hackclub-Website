@@ -13,7 +13,7 @@ const jetbrainsMono= JetBrains_Mono({
 export default function Landing(){
     return(
         <div>
-            <h1 className={`-mb-40 ${plusJakartaSans.className} font text-[50px] font-bold w-full text-center`}>Programs!</h1>
+            <h1 className={`-mb-40 ${plusJakartaSans.className} font text-[50px] text-white font-bold w-full text-center`}>Programs!</h1>
             <div className={`  hero-container min-h-screen flex flex-col items-center justify-center text-center w-full`}>
                 
                 <div className="grid grid-cols-2 gap-10 w-full max-w-[500]">
@@ -29,10 +29,7 @@ export default function Landing(){
                                 <Link href={"https://boba.hackclub.com/"} target="_blank">
                                 <span>Start Now &rarr;</span>
                                 </Link>
-                            </div>
-                            
-                        
-                        
+                            </div>   
                     </div>
                     
                     <div className=" relative aspect-square bg-purple-600 rounded-4xl p-8 flex items-center justify-center overflow-hidden">
@@ -61,11 +58,11 @@ export default function Landing(){
       <p className="mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-zinc-400 leading-relaxed font-normal">
         No lectures. No busywork. Just the tools, parts, and community to build what you want.
       </p>
-      <div className="font-bold hover:scale-[1.1] absolute bottom-40 flex items-center bg-[#FFFDD0] text-black rounded-3xl pt-2 pb-2 p-4">
-        <Link href={"https://clubs.hackclub.com/auth/member?join=N95WSZ"} target="_blank">
-            <span>Start Now &rarr;</span>
-        </Link>
-       </div>
+      <Link href={"https://clubs.hackclub.com/auth/member?join=N95WSZ"} target="_blank" className="w-50 h-14 font-bold hover:scale-[1.1] absolute bottom-40  bg-[#FFFDD0] text-black rounded-4xl p-4">
+        <div>
+            <span className="text-lg">Start Now &rarr;</span>
+        </div>
+       </Link>
     </div>
     </div>
     );
