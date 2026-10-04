@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "name": "Stuff",
+    "link": "https://antelope-hackclub.vercel.app/gallery",
+    "image": "https://antelope-hackclub.vercel.app/logo.svg",
+    "description": "Yes tuf"
+  }
+]
