@@ -9,7 +9,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export default function Header(){
     return (
-        <header className="w-full grid grid-cols-3 items-center text-[#FFF4E8]">
+        <header className="w-full grid grid-cols-3 items-center text-[#FFF4E8] bg-transparent z-100">
             <div className="flex items-center justify-start">
                 <Link href={"https://antelope-hackclub.vercel.app"} target="_blank" rel="noopener noreferrer">
                     <Image
@@ -35,7 +35,7 @@ export default function Header(){
 
 export function HeaderJoin(){
     return (
-        <header className="w-full grid grid-cols-3 items-center text-[#FFF4E8]">
+        <header className="w-full grid grid-cols-3 items-center text-[#FFF4E8] bg-transparent z-100">
             <div className="flex items-center justify-start">
                 <Link href={"https://antelope-hackclub.vercel.app"} target="_blank" rel="noopener noreferrer">
                     <Image
