@@ -24,10 +24,9 @@ export default function Header(){
             
             <nav className={`${plusJakartaSans.className} p-4 gap-8 flex justify-center mt-5 transform-flat`}>
                 <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/">Home</Link>
-                <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/about">About</Link>
                 <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/gallery">Gallery</Link>
                 <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/guides">Guides</Link>
-                <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="">Events</Link>
+                <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/about">About</Link>
             </nav>
         </header>
     );
@@ -50,10 +49,9 @@ export function HeaderJoin(){
             
             <nav className={`${plusJakartaSans.className} p-4 gap-8 flex justify-center mt-5 transform-flat`}>
                 <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/">Home</Link>
-                <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/about">About</Link>
                 <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/gallery">Gallery</Link>
                 <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/guides">Guides</Link>
-                <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="">Events</Link>
+                <Link className="hover:font-bold text-[20px] hover:-translate-y-1/4" href="/about">About</Link>
             </nav>
 
             <Join />

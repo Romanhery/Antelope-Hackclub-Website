@@ -3,6 +3,12 @@
     "name": "Stuff",
     "link": "https://antelope-hackclub.vercel.app/gallery",
     "image": "https://antelope-hackclub.vercel.app/logo.svg",
-    "description": "Yes tuf"
+    "description": "This is the club's website"
+  },
+  {
+    "name": "Myles'a Swirl Website",
+    "link": "https://myles-ray.github.io/swirl/",
+    "image": "https://myles-ray.github.io/swirl/music.png",
+    "description": "This is my website I made for free Ice Cream!"
   }
 ]
