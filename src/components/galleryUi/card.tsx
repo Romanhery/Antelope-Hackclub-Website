@@ -11,7 +11,7 @@ interface CardImageProps {
   name: string;
   link: string;
   image: string;
-  description: string;
+  description?: string;
 }
 
 export function CardImage({ name, link, image, description }: CardImageProps) {
