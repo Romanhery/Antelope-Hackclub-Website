@@ -10,5 +10,10 @@
     "link": "https://myles-ray.github.io/swirl/",
     "image": "https://myles-ray.github.io/swirl/music.png",
     "description": "This is my website I made for free Ice Cream!"
+  },
+  {
+    "name": "stuff",
+    "link": "https://github.com/Romanhery/Antelope-Hackclub-Website/tree/main",
+    "image": "https://antelope-hackclub.vercel.app/logo.svg"
   }
 ]
